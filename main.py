@@ -1,15 +1,15 @@
 import os
 
-from aiogram import Bot, Dispatcher, types
+# Сделал проект по архитектуре которую увидел во время стажировки. На счет MVC архитектуры ->
+# могу показать приватную репозиторию по проекту который делал на Django
+
+from aiogram import Bot, Dispatcher
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
-from aiogram.dispatcher.filters.state import StatesGroup, State
-from aiogram.dispatcher import FSMContext
-from aiogram.types import ParseMode
 from aiogram import executor
 import logging
 from dotenv import load_dotenv
 
-from domains.telegram import index
+from src.domains.telegram import index
 
 load_dotenv()
 
